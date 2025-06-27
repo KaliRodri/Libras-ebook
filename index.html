@@ -1,107 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ebook Interativo com Animação</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 700px;
-      position: relative;
-    }
-
-    .container p {
-      text-align: justify;
-    }
-
-    .highlight {
-      color: #007bff;
-      font-weight: bold;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .tooltip-image {
-      position: absolute;
-      top: 120%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 150px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s ease;
-      z-index: 10;
-    }
-
-    .tooltip-image.show {
-      opacity: 1;
-      pointer-events: auto;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Química para Todos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <span class="highlight" data-img="amizade.png">
-        <u>Amigo</u>
-        <img src="/images/Amigo.jpg" alt="Sinal de Amizade em Libras" class="tooltip-image" />
-      </span>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <span class="highlight" data-img="amizade.png">
-        <u>Açúcar</u>
-        <img src="/images/Açucar.png" alt="Sinal de Amizade em Libras" class="tooltip-image" />
-      </span> 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      <span class="highlight" data-img="amizade.png">
-        <u>Próton</u>
-        <img src="/images/Açucar.png" alt="Sinal de Amizade em Libras" class="tooltip-image" />
-      </span> 
-    
-    </p>
-  </div>
+  <header class="hero">
+    <img src="imagens/Group 589.png" alt="Capa Química para Todos" />
+    <h1>Química Para Todos</h1>
+    <img src="imagens/Hands.png" alt="Capa Química para Todos" />
+    <p>Sentir o saber</p>
+  </header>
 
-  <script>
-    document.querySelectorAll('.highlight').forEach(el => {
-      const img = el.querySelector('.tooltip-image');
+  <main>
+    <section class="apresentacao">
+      <h2>Apresentação</h2>
+      <p>Bem-vindo ao Química para Todos! Pensado especialmente para estudantes surdos, este material oferece traduções
+        de termos técnicos em Libras, tornando a disciplina mais acessível e inclusiva.</p>
+      <p>Com conceitos fundamentais da Química apresentados de forma clara e dinâmica, estimula o aprendizado intuitivo.
+        Através de recursos visuais e textos adaptados, todos os alunos podem explorar o fascinante mundo da Química,
+        independentemente de suas necessidades.</p>
+      <p>Nosso objetivo é democratizar o conhecimento científico, garantindo que cada estudante tenha a oportunidade de
+        se apaixonar pela Química.</p>
+    </section>
 
-      el.addEventListener('mouseenter', () => {
-        img.classList.add('show');
-      });
+    <nav class="sumario">
+      <h2>Sumário</h2>
+      <ul>
+        <img class="img1" src="imagens/WhatsApp Image 2025-06-26 at 20.41.33.jpeg" alt="Modelo atômico">
+        <li><a href="#cap1">Capítulo 1 – Átomos e Elementos Químicos</a></li>
+        <li><a href="#cap2">Capítulo 2 – Ligações Químicas</a></li>
+        <li><a href="#cap3">Capítulo 3 – Estados de Agregação da Matéria</a></li>
+        <li><a href="#cap4">Capítulo 4 – Leis Ponderais</a></li>
+        <li><a href="#cap5">Capítulo 5 – Funções Inorgânicas</a></li>
+        <li><a href="#cap6">Capítulo 6 – Reações Químicas</a></li>
+        <img class="img2" src="imagens/WhatsApp Image 2025-06-26 at 20.41.34.jpeg" alt="Ligações Químicas">
+      </ul>
+    </nav>
 
-      el.addEventListener('mouseleave', () => {
-        img.classList.remove('show');
-      });
-    });
-  </script>
-  <!-- VLibras Plugin -->
+    <section id="cap1" class="capitulo">
+      <h2>Capítulo 1 – Átomos e Elementos Químicos</h2>
+      <nav class="conteudo">
+        <h2>Conteúdos</h2>
+        <ol>
+          <li>Conceito de matéria</li>
+          <li>Estrutura do átomo</li>
+          <li>Número atômico e número de massa</li>
+          <li>Modelos atômicos históricos</li>
+          <li>Elementos Químicos</li>
+          <li>Tabela periódica: classificação e organização</li>
+          <li>Mão na massa</li>
+        </ol>
+      </nav>
+    </section>
+
+    <section id="cap1" class="capitulo">
+      <div class="pagina-capitulo">
+
+        <aside class="faixa-lateral">
+          <span>Capítulo 1</span>
+        </aside>
+
+        <section class="conteudo">
+          <h1>Átomos <span class="amp">&</span> Elementos Químicos</h1>
+
+          <div class="secao">
+            <h2>1. Afinal, o que é matéria?</h2>
+            <p>Matéria é tudo que possui massa e ocupa espaço, ou seja, tem volume (figura 1). Isso inclui tudo que
+              podemos ver, tocar ou sentir, desde a água que bebemos até o ar que respiramos.</p>
+
+            <div class="imagem-legenda">
+              <img src="imagens/Cap1_img1.jpeg" alt="Figura 1 - Exemplos de matéria">
+              <figcaption>Figura 1 – Exemplos de matéria. <br>Fonte: Canva</figcaption>
+            </div>
+          </div>
+
+          <div class="secao">
+            <h2>2. Átomos: unidade fundamental da matéria</h2>
+            <p>Você já montou um LEGO (figura 2)? Cada pecinha tem sua função, mas, sozinha, não forma uma estrutura
+              completa. O átomo é como essa peça: a menor parte da matéria.</p>
+
+            <div class="imagem-legenda">
+              <img src="imagens/Cap2_img2.jpeg" alt="Figura 2 - Casinha de LEGO">
+              <figcaption>Figura 2 – Ilustração de uma casinha montada com peças LEGO. <br>Fonte: Canva</figcaption>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+    <section id="cap2" class="capitulo">
+      <h2>Capítulo 2 – Ligações Químicas</h2>
+      <p>Em manutenção</p>
+     
+    </section>
+
+    <section id="cap3" class="capitulo">
+      <h2>Capítulo 3 – Estados de Agregação da Matéria</h2>
+      <p>Em manutenção</p>
+
+    </section>
+
+    <section id="cap4" class="capitulo">
+      <h2>Capítulo 4 – Leis Ponderais</h2>
+      <p>Em manutenção</p>
+    </section>
+
+    <section id="cap5" class="capitulo">
+      <h2>Capítulo 5 – Funções Inorgânicas</h2>
+      <p>Em manutenção</p>
+    </section>
+
+    <section id="cap6" class="capitulo">
+      <h2>Capítulo 6 – Reações Químicas</h2>
+      <p>Em manutenção</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Química para Todos | Sentir o Saber</p>
+  </footer>
+
+  
+  <script src="script.js"></script>
   <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
   </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
+
 </html>
